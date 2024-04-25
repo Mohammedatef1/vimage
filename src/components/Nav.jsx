@@ -1,7 +1,7 @@
 const Nav = () => {
   return (
-    <header>
-      <nav className="px-[5rem] relative z-10 bg-trasparent py-12 flex justify-between items-center">
+    <header className="shadow-md">
+      <nav className="px-[5rem] bg-[#F6F7F9] relative z-10 py-5 flex justify-between items-center">
         <div>
           <h1 className="text=[#34bb63] text-3xl font-bold font-serif">Vimage</h1>
         </div>

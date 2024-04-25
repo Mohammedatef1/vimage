@@ -73,7 +73,7 @@ const Landing = () => {
         className={` bg-[#34bb63]  z-0  rounded-full fixed top-1/2 transform -translate-y-1/2 right-0  translate-x-[390px] `}
         style={{ width: `${500 + scrollY * 3}px`, height: `${500 + scrollY * 3}px` }}></div>
       <div className="relative z-10">
-        <div className="px-[5rem] h-[calc(100vh-144px)]  flex items-center gap-12">
+        <div className="px-[5rem] h-[calc(100vh-100px)]  flex items-center gap-12">
           <motion.div
             className="min-w-[290px]"
             variants={{
@@ -178,7 +178,7 @@ const Landing = () => {
               }}
               initial="hidden"
               animate={mainControls}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, once: false }}
               className="w-[35%]  flex justify-center">
               <img
                 className="w-3/4 transform -translate-y-[50px]"
