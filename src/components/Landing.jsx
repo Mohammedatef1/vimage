@@ -92,7 +92,7 @@ const Landing = () => {
               <br /> optimize roccesses and reduce time... <br /> all so you can focus on moving forward.
             </p>
           </motion.div>
-          <div className="lg:px-[60px] md:p-[40px] lg:block md:block sm:hidden ">
+          <div className="lg:px-[60px] md:p-[40px] md:block  hidden ">
             <img
               className="max-h-full"
               src={mainCar}
@@ -110,7 +110,7 @@ const Landing = () => {
               <br /> optimize roccesses and reduce time... <br /> all so you can focus on moving forward.
             </p>
           </div>
-          <div className="flex justify-evenly items-center w-4/6">
+          <div className="md:flex justify-evenly items-center w-4/6 hidden ">
             <div>
               <img
                 src={secondaryCar1}
@@ -131,11 +131,11 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className="px-[5rem] relative z-10 bg-[#f3f5f8] pt-[105px] pb-[250px]">
+        <div className="px-[5rem] relative z-10 bg-[#f3f5f8] pt-[105px] pb-[100px]  md:pb-[200px] lg:pb-[250px]">
           <h2 className="text-[#323233] font-semibold font-sans text-[45px] text-center">Why us?</h2>
           <div
             ref={SSection}
-            className="flex items-center   justify-evenly mt-10">
+            className="flex items-center justify-evenly flex-wrap  mt-10">
             {data.map((item) => (
               <motion.div
                 variants={{
@@ -146,7 +146,7 @@ const Landing = () => {
                 animate={mainControls}
                 transition={{ duration: 0.5, delay: 0.25 }}
                 key={item.label}
-                className="flex flex-col items-center gap-2 text-center">
+                className="flex flex-col lg:w-1/4 md:w-1/2 w-full items-center mt-8 gap-2 text-center">
                 <img
                   src={item.icon}
                   alt=""
@@ -158,8 +158,8 @@ const Landing = () => {
             ))}
           </div>
         </div>
-        <div className="bg-white relative z-20">
-          <div className="flex items-center h-[500px] ">
+        <div className="bg-white mb-10 relative z-20">
+          <div className="flex  flex-wrap  ">
             <motion.div
               variants={{
                 hidden: { opacity: 0 },
@@ -168,7 +168,7 @@ const Landing = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.8 }}
-              className="w-[400px] h-[400px] transform -translate-x-1/2 absolute rounded-full bg-[#34bb63]"></motion.div>
+              className="lg:w-[400px] lg:h-[400px] w-[300px] h-[300px] transform translate-y-[100px] -translate-x-1/2 absolute rounded-full bg-[#34bb63]"></motion.div>
             <div className="w-[18%] "></div>
             <motion.div
               ref={LSection}
@@ -179,14 +179,14 @@ const Landing = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.5, once: false }}
-              className="w-[35%]  flex justify-center">
+              className="md:w-[35%] w-[70%] flex justify-center">
               <img
                 className="w-3/4 transform -translate-y-[50px]"
                 src={model}
                 alt=""
               />
             </motion.div>
-            <div className=" w-[47%] ps-8 space-y-8">
+            <div className="flex flex-col justify-center md:w-[47%] w-[80%]  ps-8 space-y-8">
               <h2 className="text-[#323233] font-semibold font-sans text-5xl pt-10">
                 Build for people <br /> by people
               </h2>
