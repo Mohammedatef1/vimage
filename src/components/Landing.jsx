@@ -158,7 +158,7 @@ const Landing = () => {
             ))}
           </div>
         </div>
-        <div className="bg-white mb-10 relative z-20">
+        <div className="bg-white pb-10 relative z-20">
           <div className="flex  flex-wrap  ">
             <motion.div
               variants={{
@@ -168,8 +168,8 @@ const Landing = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.8 }}
-              className="lg:w-[400px] lg:h-[400px] w-[300px] h-[300px] transform translate-y-[100px] -translate-x-1/2 absolute rounded-full bg-[#34bb63]"></motion.div>
-            <div className="w-[18%] "></div>
+              className="lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] w-[250px] h-[250px] transform translate-y-[100px] -translate-x-1/2 absolute rounded-full bg-[#34bb63]"></motion.div>
+            <div className="w-[28%] md:w-[18%] "></div>
             <motion.div
               ref={LSection}
               variants={{
@@ -186,11 +186,11 @@ const Landing = () => {
                 alt=""
               />
             </motion.div>
-            <div className="flex flex-col justify-center md:w-[47%] w-[80%]  ps-8 space-y-8">
+            <div className="flex flex-col justify-center md:w-[47%] w-[80%] ps-20  md:ps-8 space-y-8">
               <h2 className="text-[#323233] font-semibold font-sans text-5xl pt-10">
                 Build for people <br /> by people
               </h2>
-              <p className="text-[#262627] w-1/2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero exercitationem laboriosam iure quod voluptates tempora deleniti soluta quisquam.</p>
+              <p className="text-[#262627] w-3/4 md:w-1/2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero exercitationem laboriosam iure quod voluptates tempora deleniti soluta quisquam.</p>
             </div>
           </div>
         </div>

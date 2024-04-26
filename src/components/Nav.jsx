@@ -1,9 +1,9 @@
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 const Nav = () => {
   return (
     <header className="shadow-md">
-      <nav className="px-[5rem] bg-[#F6F7F9] relative z-10 py-5 flex justify-between items-center">
+      <nav className="lg:px-[5rem] md:px-[3rem] px-[2rem] bg-[#F6F7F9] relative z-10 py-5 flex justify-between items-center">
         <div>
           <h1 className="text=[#34bb63] text-3xl font-bold font-serif">Vimage</h1>
         </div>
